@@ -120,10 +120,12 @@ const loginUser = asyncHandler(async (req, res) => {
   );
 
   const options = {
-    // httpOnly: true,
+    httpOnly: true,
     sameSite: "None",
     secure: process.env.NODE_ENV === "production",
     maxAge: 24 * 60 * 60 * 1000,
+    path: "/",
+    domain: "https://dancing-malabi-a04660.netlify.app",
   };
   return res
     .status(200)
@@ -161,7 +163,7 @@ const logoutUser = asyncHandler(async (req, res) => {
     sameSite: "None",
     maxAge: 24 * 60 * 60 * 1000,
     path: "/",
-    domain: ".onrender.com",
+    domain: "https://dancing-malabi-a04660.netlify.app",
   };
 
   return res
