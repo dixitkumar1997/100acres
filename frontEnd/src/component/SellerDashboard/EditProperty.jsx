@@ -51,7 +51,7 @@ const EditProperty = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/properties/${property._id}`,
+        `https://one00acres.onrender.com/properties/${property._id}`,
         propertyData,
         {
           headers: {

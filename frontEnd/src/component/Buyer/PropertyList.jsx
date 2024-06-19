@@ -66,7 +66,7 @@ const PropertyList = () => {
   useEffect(() => {
     const getPropertyList = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/properties");
+        const res = await axios.get("https://one00acres.onrender.com/api/properties");
 
         //   console.log("property list", res.data.data.properties
         // );

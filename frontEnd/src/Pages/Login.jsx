@@ -30,7 +30,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/users/login",
+        "https://one00acres.onrender.com/api/v1/users/login",
         loginForm,
         {
           withCredentials: true,

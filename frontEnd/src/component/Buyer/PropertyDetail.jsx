@@ -12,7 +12,7 @@ const PropertyDetail = () => {
   useEffect(() => {
     const getPropertyDetail = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/properties/${id}`);
+        const res = await axios.get(`https://one00acres.onrender.com/api/properties/${id}`);
 
         console.log("getdata", res.data.data)
 

@@ -10,7 +10,7 @@ const SellerPropertyList = () => {
   useEffect(() => {
     const getPropertyList = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/properties");
+        const res = await axios.get("https://one00acres.onrender.com/api/properties");
 
       setPropertyList(res.data.data.properties)
       } catch (err) {
@@ -26,7 +26,7 @@ const SellerPropertyList = () => {
     try {
       const filteredList=propertyList.filter((item)=>item._id !== id )
       setPropertyList(filteredList)
-      const res = await axios.delete(`http://localhost:5000/api/properties/${id}` ,{
+      const res = await axios.delete(`https://one00acres.onrender.com/api/properties/${id}` ,{
         withCredentials:true
       });
       

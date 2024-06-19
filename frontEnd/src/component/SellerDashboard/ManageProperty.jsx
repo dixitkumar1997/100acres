@@ -32,7 +32,7 @@ const ManageProperty = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/properties",
+        "https://one00acres.onrender.com/api/properties",
         propertyData,
         {
           withCredentials: true,
